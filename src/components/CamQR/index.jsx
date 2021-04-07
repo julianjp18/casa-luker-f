@@ -5,12 +5,12 @@ import { openNotification } from '../../utils/extras';
 import './camqr.scss';
 
 const server = 'https://server1.proyectohorus.com.ar';
-const user = 'TrekingSAS';
-const password = 'TrekingSAS2021*';
-const profileuuid = '1b6e0e167ee111eb9c3300155d714f00';
+const user = 'TrekingSAS2';
+const password = 'Treking2021#';
+const profileuuid = '1a28921e97e211eb944500155d714f00';
 
 const backendUrl = 'https://afternoon-bastion-43792.herokuapp.com/';
-  
+
 const CamQR = ({ isProductView = false, isVehicleView = false }) => {
   const [position, setposition] = useState([]);
   const [vehicle, setvehicle] = useState([]);
@@ -39,7 +39,7 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
     }
     return new Blob(byteArrays, { type: contentType });
   }
-  
+
   // OBTIENE EL TOKEN
   const getToken = () => {
     const form = new FormData();
@@ -64,7 +64,7 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
 
     GetToken.send(form);
   };
-  
+
   const sendToInventory = (data) => {
     let response = '';
     const request = new XMLHttpRequest();
@@ -73,7 +73,7 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
     request.setRequestHeader('Content-Type', 'application/json');
     request.setRequestHeader("Access-Control-Allow-Origin", "*");
     request.setRequestHeader("Access-Control-Allow-Methods", "POST");
-    
+
     request.onload = function () {
       if (this.response) {
         try {
@@ -85,21 +85,21 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
               setposition(response.value.split('/'));
             else
               setposition([]);
-    
+
             openNotification(response.response, response.message);
           } else if (request.status == 404) {
             if (response.value !== '')
               openNotification('warning', response.message);
-          } 
+          }
         } catch (err) {
           console.log(err);
         }
       }
-      
+
     };
 
     request.send(data);
-  };  
+  };
 
   const saveVehicleState = (data) => {
     let response = '';
@@ -109,7 +109,7 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
     request.setRequestHeader('Content-Type', 'application/json');
     request.setRequestHeader("Access-Control-Allow-Origin", "*");
     request.setRequestHeader("Access-Control-Allow-Methods", "POST");
-    
+
     request.onload = function () {
       if (this.response) {
         try {
@@ -121,7 +121,7 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
               setvehicle(response.value.split('/'));
             else
               setvehicle([response.value, '']);
-    
+
             openNotification(response.response, response.message);
           } else if (request.status == 404) {
             if (response.value !== '')
@@ -129,13 +129,13 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
           }
         } catch (err) {
           console.log(err);
-        } 
+        }
       }
-      
+
     };
 
     request.send(data);
-  }; 
+  };
 
   // LLAMADA A ENDPOINT DE CODEBAR DECODER PARA OBTENER LOS DATOS DE UN QR O CODIGO DE BARRAS
   const Recognition = () => {
@@ -153,10 +153,10 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
 
             let result = '';
             if ((data && data.detected_id !== 'FAIL' && data.detected_id !== undefined)) {
-              result = data.detected_id.replace('VEHICLE','').replace('(QRCODE)', '');
-            } else 
-                result = 'No detectado';
-            
+              result = data.detected_id.replace('VEHICLE', '').replace('(QRCODE)', '');
+            } else
+              result = 'No detectado';
+
             if (isProductView) {
               sendToInventory(this.response);
               const resultElement = document.getElementById('results');
@@ -166,7 +166,7 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
             } else if (isVehicleView) {
               saveVehicleState(this.response);
             }
-          }         
+          }
         }
       };
 
@@ -214,7 +214,7 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
                     <Col xs={22}>
                       <span className="description-item">Escanea el código QR en orden.</span>
                     </Col>
-                  </Row>  
+                  </Row>
                 </div>
               </Col>
               <Col xs={4}></Col>
