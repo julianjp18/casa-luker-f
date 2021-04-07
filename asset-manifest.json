@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/casa-luker-f/static/css/main.275a6dba.chunk.css",
+    "main.js": "/casa-luker-f/static/js/main.bb1bf4ca.chunk.js",
+    "main.js.map": "/casa-luker-f/static/js/main.bb1bf4ca.chunk.js.map",
+    "runtime-main.js": "/casa-luker-f/static/js/runtime-main.933cffe2.js",
+    "runtime-main.js.map": "/casa-luker-f/static/js/runtime-main.933cffe2.js.map",
+    "static/css/2.a5497ee8.chunk.css": "/casa-luker-f/static/css/2.a5497ee8.chunk.css",
+    "static/js/2.e7dff871.chunk.js": "/casa-luker-f/static/js/2.e7dff871.chunk.js",
+    "static/js/2.e7dff871.chunk.js.map": "/casa-luker-f/static/js/2.e7dff871.chunk.js.map",
+    "static/js/3.75b8f681.chunk.js": "/casa-luker-f/static/js/3.75b8f681.chunk.js",
+    "static/js/3.75b8f681.chunk.js.map": "/casa-luker-f/static/js/3.75b8f681.chunk.js.map",
+    "index.html": "/casa-luker-f/index.html",
+    "static/css/2.a5497ee8.chunk.css.map": "/casa-luker-f/static/css/2.a5497ee8.chunk.css.map",
+    "static/css/main.275a6dba.chunk.css.map": "/casa-luker-f/static/css/main.275a6dba.chunk.css.map",
+    "static/js/2.e7dff871.chunk.js.LICENSE.txt": "/casa-luker-f/static/js/2.e7dff871.chunk.js.LICENSE.txt",
+    "static/media/logo-luker.a89f8fb4.png": "/casa-luker-f/static/media/logo-luker.a89f8fb4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.933cffe2.js",
+    "static/css/2.a5497ee8.chunk.css",
+    "static/js/2.e7dff871.chunk.js",
+    "static/css/main.275a6dba.chunk.css",
+    "static/js/main.bb1bf4ca.chunk.js"
+  ]
+}
