@@ -7,7 +7,7 @@ import logo from '../../resources/images/logo-luker.png';
 const CommonHeader = ({ auth, push, logOut }) => {
   const sessionDestroy = () => {
     localStorage.clear();
-    window.location = '/';
+    window.location = 'https://julianjp18.github.io/casa-luker-f';
   };
 
   const goTo = (path) => {
