@@ -1,0 +1,49 @@
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-top: 2px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  border: 0;
+  background: transparent;
+  margin-top: 8px;
+
+  .profile-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .username-container {
+
+    p {
+      margin-bottom: 0;
+      position: relative;
+      bottom: 10px;
+      left: 5px;
+      width: 110px;
+    }
+
+    span {
+      font-size: 10px;
+      position: relative;  
+      bottom: 60px;
+      left: 20px;
+    }
+  }
+
+  .anticon {
+    &.anticon-down {
+      font-size: 16px !important;
+      padding-top: 17px;
+
+    }
+  }
+}

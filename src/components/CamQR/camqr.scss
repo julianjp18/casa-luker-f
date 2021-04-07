@@ -1,0 +1,81 @@
+.camqr-container {
+  .camqr-content {
+    background-color: #f3f3f3;
+    margin: 0 31px;
+    padding: 10px 0;
+    border: 1px solid #35353533;
+    border-radius: 7px;
+
+    .response-content {
+      background-color: #fff;
+      margin-top: 47px;
+      margin-right: 25px;
+      border-radius: 5px;
+      padding: 10px 0;
+
+      .title {
+        font-size: 18px;
+        color: #565656;
+        margin-bottom: 2px;
+      }
+
+      .response-view-content {
+        .product-response {
+          .position {
+            font-size: 18px;
+            margin-bottom: 0;
+          }
+
+          .uva {
+            color: #ec490e;
+          }
+        }
+
+        .vehicle-response {
+          font-weight: bold;
+          font-size: 25px;
+
+          .position-result {
+            color: #0097a7;
+          }
+
+          .vehicle-result {
+            color: #ec490e;
+          }
+        }
+      }
+    }
+  }
+
+  .info-qr {
+    .subtitle {
+      font-size: 20px;
+    }
+
+    .description-content {
+      background-color: #ffffff;
+      margin-left: 12px;
+      padding: 10px;
+      border-radius: 5px;
+
+      .ant-row {
+        .ant-col-xs-2 {
+          text-align: center;
+        }
+  
+        .ant-col-xs-22 {
+          text-align: start;
+  
+          .description-item {
+            text-align: start;
+          }
+        }
+      }
+      
+    }
+  }
+
+  .my-camera {
+    margin: auto;
+  }
+}
