@@ -4,6 +4,7 @@ import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { connect } from 'react-redux';
 
 import logo from '../../../resources/images/logo-luker.png';
+import logoTreking from '../../../resources/images/logo-treking.png';
 
 import './signUp.scss';
 import { push } from 'connected-react-router';
@@ -26,7 +27,7 @@ const SignUp = ({ goToHome, goToAuth }) => {
 
   const onFinish = (values) => {
     const { username, password } = values;
-    
+
     if (username === 'admin' && password === '123456789') {
       openNotification('success', 'Bienvenido', '');
       localStorage.setItem('user', {
@@ -43,7 +44,7 @@ const SignUp = ({ goToHome, goToAuth }) => {
   return (
     <Row className="sign-up-container">
       <Col xs={24}>
-        <img className="logo" src={logo} alt="casa luker"/>
+        <img className="logo" src={logo} alt="casa luker" />
       </Col>
       <Col xs={24}>
         <div className="sign-up-content">
@@ -104,7 +105,7 @@ const SignUp = ({ goToHome, goToAuth }) => {
       </Col>
       <Col xs={24}>
         <div className="footer-content">
-          <img className="logo" src={logo} alt="casa luker"/>
+          <img className="logo" src={logoTreking} alt="casa luker" />
           <p className="extra-text">Innovation in logistics 4.0</p>
         </div>
       </Col>
