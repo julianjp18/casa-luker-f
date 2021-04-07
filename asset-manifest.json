@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/casa-luker-f/static/css/main.275a6dba.chunk.css",
-    "main.js": "/casa-luker-f/static/js/main.bb1bf4ca.chunk.js",
-    "main.js.map": "/casa-luker-f/static/js/main.bb1bf4ca.chunk.js.map",
+    "main.js": "/casa-luker-f/static/js/main.900d3f5c.chunk.js",
+    "main.js.map": "/casa-luker-f/static/js/main.900d3f5c.chunk.js.map",
     "runtime-main.js": "/casa-luker-f/static/js/runtime-main.933cffe2.js",
     "runtime-main.js.map": "/casa-luker-f/static/js/runtime-main.933cffe2.js.map",
     "static/css/2.a5497ee8.chunk.css": "/casa-luker-f/static/css/2.a5497ee8.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.a5497ee8.chunk.css",
     "static/js/2.e7dff871.chunk.js",
     "static/css/main.275a6dba.chunk.css",
-    "static/js/main.bb1bf4ca.chunk.js"
+    "static/js/main.900d3f5c.chunk.js"
   ]
 }
