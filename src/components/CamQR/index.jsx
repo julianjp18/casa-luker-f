@@ -153,7 +153,7 @@ const CamQR = ({ isProductView = false, isVehicleView = false }) => {
 
             let result = '';
             if ((data && data.detected_id !== 'FAIL' && data.detected_id !== undefined)) {
-              result = data.detected_id.replace('VEHICLE', '').replace('(QRCODE)', '');
+              result = data.detected_id.replace('VH', '').replace('(QRCODE)', '');
             } else
               result = 'No detectado';
 
