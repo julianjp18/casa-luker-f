@@ -5,10 +5,15 @@ import { openNotification } from '../../utils/extras';
 import './camqr.scss';
 
 const server = 'https://server1.proyectohorus.com.ar';
+const user = 'TrekingSAS';
+const password = 'TrekingSAS2021*';
+const profileuuid = '1b6e0e167ee111eb9c3300155d714f00';
+/*
+const server = 'https://server1.proyectohorus.com.ar';
 const user = 'TrekingSAS2';
 const password = 'Treking2021#';
 const profileuuid = '1a28921e97e211eb944500155d714f00';
-
+*/
 const backendUrl = 'https://afternoon-bastion-43792.herokuapp.com/';
 
 const CamQR = ({ isProductView = false, isVehicleView = false }) => {
